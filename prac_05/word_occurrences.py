@@ -19,4 +19,4 @@ for word in words:
     if len(word) > max_word_length:
         max_word_length = len(word)
 for word, count in word_to_count.items():
-    print(f"{word:{max_word_length}} : {count}")
+    print("{:{}} {}".format((word + ":"), (max_word_length + 1), count))
